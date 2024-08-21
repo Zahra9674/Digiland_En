@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIGILAND</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>* {
+        box-sizing: border-box;
+      }
+      
+      img {
+        vertical-align: middle;
+      }
+      
+      /* Position the image container (needed to position the left and right arrows) */
+      .container {
+        position: relative;
+      }
+      
+      /* Hide the images by default */
+      .mySlides {
+        display: none;
+      }
+      
+      /* Add a pointer when hovering over the thumbnail images */
+      .cursor {
+        cursor: pointer;
+      }
+      
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+      
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      
+      /* Container for image text */
+      .caption-container {
+        text-align: center;
+        background-color: #222;
+        padding: 2px 16px;
+        color: white;
+      }
+      
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Six columns side by side */
+      .column {
+        float: left;
+        width: 16.66%;
+      }
+      
+      /* Add a transparency effect for thumnbail images */
+      .demo {
+        opacity: 0.6;
+      }
+      
+      .active,
+      .demo:hover {
+        opacity: 1;
+      }</style>
+</head>
+<body dir="ltr" >
+    <section id="home">
+        <nav class="navbar navbar-expand-sm fixed-top">
+            <div class="icon">
+                <a href="./login.html"><i class="fa-solid fa-right-to-bracket"></i></a>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav me-auto mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./digilande.html">Home</a>
+                        </li>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Products
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="./laptopen.html">Laptops <i class="fa-solid fa-laptop"></i></a>
+                                <a class="dropdown-item" href="./mobileen.html">Mobiles <i class="fa-solid fa-mobile-screen-button"></i></a>
+                                <a class="dropdown-item" href="./cameraen.html">Cameras <i class="fa-solid fa-camera"></i></a>
+                            </div>
+                        </div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="saleen.html" style="color: red;">Sale</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./essay.html">Buyer's Guide</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./abouten.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./tamasen.html">Contact Us</a>
+                        </li>
+                    </ul>
+    
+                    <a class="navbar-brand d-none d-lg-block" href="javascript:void(0)"><img src="./img/Capture.PNG" alt=""></a>
+                </div>
+            </div>
+        </nav>
+        <br><br><br><br><br><br><br><br>
+        <div class="container" id="order">
+            <div class="row">
+                <div class="col-md-6 col-lg-6 col-sm-12">
+                    <h5>
+                        Xiaomi Mobile Phone Model Redmi Note 13 4G 256GB Storage 8GB RAM
+                    </h5>
+                    <p style="color: black;">4
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                    </p>
+        
+                    <h6>Color:
+                        <img src="./img/images (6).png" alt="" class="img-fluid rounded-circle" style="width: 50px;">
+                        <img src="./img/gold-1412245_1280.webp" alt="" class="img-fluid rounded" style="width: 37px;">
+                        <img src="./img/green-square-emoji-2048x2048-1n8jst0n.png" alt="" class="img-fluid rounded" style="width: 40px;">
+                        <img src="./img/7262.png" class="rounded-circle" alt="" style="width: 50px;">
+                    </h6>
+                </div>
+                <br>
+                <div class="col-md-6 col-lg-6 col-sm-12" id="icons">
+                    <i class="fa-regular fa-heart" id="heart"></i>
+                    <i class="fa-regular fa-bell" id="bell"></i>
+                    <i class="fa-regular fa-comment" id="comment"></i>
+                    <i class="fa-solid fa-share-nodes" id="share"></i>
+                </div>
+                <br>
+                <br>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-6 col-sm-12">
+                    <h5>Main Features</h5>
+                    <div class="feature" id="feature">
+                        <br>
+                        <h5>Rear Camera:
+                            Triple 108MP + 8MP + 2MP
+                        </h5>
+                        <hr>
+                        <h5>Processor Series: Qualcomm SM6225 Snapdragon 685 (6nm)</h5>
+                        <hr>
+                        <h5>RAM Capacity: 8GB</h5>
+                        <hr>
+                        <h5>Internal Storage Capacity: 256GB</h5>
+                        <hr>
+                        <h5>Screen Size:
+                            6.67 inches
+                        </h5>
+                    </div>
+                    <center>
+                        <h6 style="color: red;" class="text-center">Only three left in stock</h6>
+                        <h5 class="text-center" style="color: green;">200$</h5>
+                   <center>
+                        <select class="form-select" style="width: 80px;">
+                            <label for="number">Number:</label>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                      </select><a href="#"  class="btn btn-outline-light" style="background-color: rgb(248, 171, 28);margin-top: 3%;"> Add To Cart<i class="fa-solid fa-cart-plus"></i></a> </center>
+                    </center>   
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-12">
+                    <div class="container">
+                      <div class="mySlides">
+                        <div class="numbertext">1 / 6</div>
+                        <img src="./img/6-1.png" style="width:100%">
+                      </div>
+                    
+                      <div class="mySlides">
+                        <div class="numbertext">2 / 6</div>
+                        <img src="./img/6-2.png" style="width:100%">
+                      </div>
+                    
+                      <div class="mySlides">
+                        <div class="numbertext">3 / 6</div>
+                        <img src="./img/6-3.png" style="width:100%">
+                      </div>
+                        
+                      <div class="mySlides">
+                        <div class="numbertext">4 / 6</div>
+                        <img src="./img/6-4.png" style="width:100%">
+                      </div>
+                    
+                      <div class="mySlides">
+                        <div class="numbertext">5 / 6</div>
+                        <img src="./img/6-5.png" style="width:100%">
+                      </div>
+                        
+                     
+                        
+                      <a class="prev" onclick="plusSlides(-1)">❮</a>
+                      <a class="next" onclick="plusSlides(1)">❯</a>
+                   
+                    
+                      <div class="row">
+                        <div class="column">
+                          <img class="demo cursor" src="./img/6-1.png" style="width:100%" onclick="currentSlide(1)">
+                        </div>
+                        <div class="column">
+                          <img class="demo cursor" src="./img/6-2.png" style="width:100%" onclick="currentSlide(2)" >
+                        </div>
+                        <div class="column">
+                          <img class="demo cursor" src="./img/6-3.png" style="width:100%" onclick="currentSlide(3)" >
+                        </div>
+                        <div class="column">
+                          <img class="demo cursor" src="./img/6-4.png" style="width:100%" onclick="currentSlide(4)" >
+                        </div>
+                        <div class="column">
+                          <img class="demo cursor" src="img/6-5.png" style="width:100%" onclick="currentSlide(5)" >
+                        </div>    
+                      
+                      </div>
+                    </div></div>
+    
+            </div>
+    
+            <div class="row mx-3">
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="review-box-container">
+                        <h2>Give your opinion to guide others about this product.</h2>
+                        <form id="reviewForm">
+                            <div class="form-group">
+                                <label for="userName">Name</label>
+                                <input type="text" id="userName" name="userName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="userEmail">Email (optional)</label>
+                                <input type="email" id="userEmail" name="userEmail">
+                            </div>
+                            <div class="form-group">
+                                <label for="userRating">Rating</label>
+                                <div class="star-rating">
+                                    <input type="radio" id="star5" name="rating" value="5">
+                                    <label for="star5" title="5 stars">&#9733;</label>
+                                    <input type="radio" id="star4" name="rating" value="4">
+                                    <label for="star4" title="4 stars">&#9733;</label>
+                                    <input type="radio" id="star3" name="rating" value="3">
+                                    <label for="star3" title="3 stars">&#9733;</label>
+                                    <input type="radio" id="star2" name="rating" value="2">
+                                    <label for="star2" title="2 stars">&#9733;</label>
+                                    <input type="radio" id="star1" name="rating" value="1">
+                                    <label for="star1" title="1 star">&#9733;</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="userReview">Review:</label>
+                                <textarea id="userReview" name="userReview" rows="4" required></textarea>
+                            </div>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+           
+            <div class="col-sm-12 col-md-8 col-lg-8" id="moshabe">
+                <div class="row mt-3">
+      
+                  <div class="col-sm-12 col-md-4 col-lg-3">
+                    <div class="card" style="width:200px">
+                      <img class="card-img-top" src="./img/small_product-TLP-32037_2861817f-320b-439a-8a9a-b28660cf97b6.webp" alt="Card image">
+                      
+                    <p style="text-align:center;color: black;">4.3<i class="fa-solid fa-star" style="color: gold;"></i></p>
+      
+                      <div class="card-body">
+                        <p class="card-title">Moobile Galaxy A15 4G</p>
+                        <h5 class="text-center">100$</h5>
+                          <center><a href="./mobile2en.html"  class="btn btn-outline-light" style="background-color: rgb(248, 171, 28);"> More Detail</a> </center>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-4 col-lg-3">
+                    <div class="card" style="width:200px">
+                      <img class="card-img-top" src="./img/small_product-TLP-4993_e62cc295-8d95-469e-bfa1-7bda32e2ee7b.webp" alt="Card image">
+                      
+                    <p style="text-align:center;color: black;">4<i class="fa-solid fa-star" style="color: gold;"></i></p>
+      
+                      <div class="card-body">
+                        <p class="card-title">Mobile iPhone 13 CH/A Not Active </p>
+                        <h5 class="text-center">700$</h5>
+                          <center><a href="./mobile3en.html"  class="btn btn-outline-light" style="background-color: rgb(248, 171, 28);">More Detail</a> </center>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-4 col-lg-3">
+                    <div class="card" style="width:200px">
+                      <img class="card-img-top" src="./img/small_product-TLP-32884_6d989e90-55c9-4393-a1d1-1662070a16e0.webp" alt="Card image">
+                      
+                    <p style="text-align:center;color: black;">3.9<i class="fa-solid fa-star" style="color: gold;"></i> </p>
+      
+                      <div class="card-body">
+                        <p class="card-title">  Mobile Poco X6 Pro 5G
+                           </p>
+                        <h5 class="text-center">250$</h5>
+                          <center><a href="./mobile4en.html" class="btn btn-outline-light" style="background-color: rgb(248, 171, 28);">More Detail</a> </center>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+         </div>
+             
+              
+          </div>
+                    
+                
+                   
+         
+        <br><br><br><br>            
+<hr style="width: 100%;">
+<footer>
+  <div class="container" id="contact">
+    <div class="row">
+      <div class="col-sm-12 col-md-4 col-lg-4" id="tamas">
+        <h3 >Contact Us</h3>
+        <a href=""><img src="./img/images (5).png" alt="">Tehran - Vali-Asr Square - No. 83</a>
+
+        <a href="mailto:example@example.com"><img src="./img/печать-201003176.webp" alt="">Digiland@gmail.com</a>
+
+        <a href="tel:+1234567890"><img src="./img/nody-وکتور-آرم-1677479713.png" alt="">021-33347566</a>
+
+        <a href="https://wa.me/1234567890"><img src="./img/nody-لوگو-png-واتساپ-1677765608.png" alt="">WhatsApp</a>
+
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-4" id="banner"><img src="./img/Capture.PNG" class="img-fluid" alt="">
+        <br>
+        <div class="social col-12 ">
+        <a href="#"> <i class="fab fa-facebook "></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+    
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a></div>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-4" id="links">
+        <h3 style="margin-left: 15px;">Links</h3>
+        <a href="#home">Home</a>
+        <a href="#sale">Products</a>
+        <a href="#sale">Customer Club</a>
+        <a href="#sale">Customer Rights</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+        <script>
+            
+            
+            let items = document.querySelectorAll('.sale .carousel .carousel-item')
+            
+                    items.forEach((el) => {
+                        const minPerSlide = 4
+                        let next = el.nextElementSibling
+                        for (var i=1; i<minPerSlide; i++) {
+                            if (!next) {
+                        // wrap carousel by using first child
+                        next = items[0]
+                    }
+                    let cloneChild = next.cloneNode(true)
+                    el.appendChild(cloneChild.children[0])
+                    next = next.nextElementSibling
+                }
+            })
+         
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("demo");
+              let captionText = document.getElementById("caption");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
+              captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+            
+            // script.js
+            document.getElementById('reviewForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+            
+                const userName = document.getElementById('userName').value.trim();
+                const userEmail = document.getElementById('userEmail').value.trim();
+                const userRating = document.querySelector('input[name="rating"]:checked');
+                const userReview = document.getElementById('userReview').value.trim();
+            
+                if (!userName || !userReview || !userRating) {
+                    alert("Name, rating, and review are required.");
+                    return;
+                }
+            
+                // Simulate form submission
+                alert(`Review submitted successfully!\n\nName: ${userName}\nRating: ${userRating.value}\nReview: ${userReview}`);
+            
+                // Clear the form
+                document.getElementById('reviewForm').reset();
+            });
+            </script>
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+            
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+            </body>
+            </html>
